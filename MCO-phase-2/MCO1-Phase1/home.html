@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WUUP</title>
+  <link href="home_style.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <h2 class="log">
+        WUUP
+      </h2>
+
+      <div class="search-bar">
+        <i class="uil uil-search"></i>
+        <input type="search" placeholder="Search">
+      </div>
+      
+      <div class="navbar">
+        <nav>
+            <ul id='MenuItems'>
+                <li><a href='home.html'>Home</a></li>
+                <li><a href='profile.html'>Profile</a></li>
+                <li><a href='report.html'>Report an Issue</a></li>
+                <li><a href='index.html'>Logout</a></li>
+            </ul>
+            
+        </nav>
+        
+    </div>
+    
+      <div class="create">        
+      </div>
+  </nav>
+
+  <br><br><br> <br> <br> <br>
+  
+  <div class="posts-container">
+    <form id="form">
+        <label for="image-input" class="customize-up">
+            <p class="icons"> <iconify-icon inline icon="uil:image-upload" width="48"></iconify-icon><br>Upload Image</p>
+        </label>
+        <input type="file" class ="content-image" id="image-input" accept="image/jpeg, image/png, image/jpg">
+        <br><br>
+        <textarea name="" id="input" cols="60" rows="10" placeholder="Write Text Here"></textarea>
+        <br><br>
+        <div id="msg"></div>
+    <button type="submit" class="button-design"> Post</button>
+    </form>
+  </div>
+  <br>
+  <div id="posts">
+  </div>
+  <br>
+  <div class="posts-container" id="1">
+    <div class="post-header">
+        <div class="header-body">
+            <div class="post-info">
+                <h2 class="post-title" ><a href="profile1.html">@Foodlover112</a></h2>                                  
+                <div class="post-date">
+                    March 23, 2021
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img class="content-image" src="picture1.jpg" />
+    </div>
+    <div class="post-footer">
+        <div class="description-title">
+            <h3 class ="label">Febuary 26, 2022</h3>
+        </div>
+        <div class="desc-body">
+          <span>Cooking some nuggets for the kids! #breakfasttime</span>
+      </div>
+      <br><hr>
+      <div class="post-comment">
+          <form id="descrip">
+              <p class="com-main" id="replace">Write your comment</p>
+              <br><br>
+              <textarea name="" class="comment-box" id="desc" cols="50" rows="5"></textarea>
+             <span><button type="button" onclick="replaceWrite()">Comment</button></span>
+          </form>
+      </div> 
+    </div>
+    <ul class="footer-buttons">
+        <li id="like"></li>
+        <li id="comment"></li>
+    </ul>
+</div>
+</br>
+<div class="posts-container" id="2">
+    <div class="post-header">
+        <div class="header-body">
+            <div class="post-info">
+                <h1 class="post-title" ><a href="profile2.html">@nancyVegan</a></h1>                                  
+                <div class="post-date">
+                    Las Pinas City
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img class="content-image" src="picture2.jpg" />
+    </div>
+    <div class="post-footer">
+            <div class="description-title">
+                <h3 class ="label">October 13, 2022</h3>
+            </div>
+            <div class="desc-body">
+              <span>Vegies  #Vegan</span>
+          </div>
+          <br><hr>
+          <div class="post-comment">
+              <form id="descrip2">
+                  <p class="com-main" id="replace2">Write your comment</p>
+                  <br><br>
+                  <textarea name="" class="comment-box" id="desc2" cols="50" rows="5"></textarea>
+                 <span><button type="button" onclick="replaceWrite2()">Comment</button></span>
+              </form>
+          </div> 
+    </div>
+    <ul class="footer-buttons">
+        <li id="like"></li>
+        <li id="comment"></li>
+    </ul>
+  </div>
+  <br>
+  <div class="posts-container" id="3">
+    <div class="post-header">
+        <div class="header-body">
+            <div class="post-info">
+                <h1 class="post-title" ><a href="profile3.html">@raymund2</a></h1>                                  
+                <div class="post-date">
+                    Baguio City
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img class="content-image" src="picture3.jpg" />
+    </div>
+    <div class="post-footer">
+            <div class="description-title">
+                <h3 class ="label">January 05, 2022</h3>
+            </div>
+            <div class="desc-body">
+              <span>Siomai tayo dyan mga pare!</span>
+          </div>
+          <br><hr>
+          <div class="post-comment">
+              <form id="descrip3">
+                  <p class="com-main" id="replace3">Write your comment</p>
+                  <br><br>
+                  <textarea name="" class="comment-box" id="desc3" cols="50" rows="5"></textarea>
+                 <span><button type="button" onclick="replaceWrite3()">Comment</button></span>
+              </form>
+          </div> 
+    </div>
+    <ul class="footer-buttons">
+        <li id="like"></li>
+        <li id="comment"></li>
+    </ul>
+  </div>
+  <br>
+  <div class="posts-container" id="4">
+    <div class="post-header">
+        <div class="header-body">
+            <div class="post-info">
+                <h1 class="post-title" ><a href="profile4.html">@pastalover012</a></h1>                                  
+                <div class="post-date">
+                     Makati City
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img class="content-image" src="picture4.jpg" />
+    </div>
+    <div class="post-footer">
+            <div class="description-title">
+                <h3 class ="label">July 29, 2022</h3>
+            </div>
+            <div class="desc-body">
+              <span>Pasta date with my special someone :> Pizza is so good as well. definitely going back here again!!</span>
+          </div>
+          <br><hr>
+      <div class="post-comment">
+          <form id="descrip4">
+              <p class="com-main" id="replace4">Write your comment</p>
+              <br><br>
+              <textarea name="" class="comment-box" id="desc4" cols="50" rows="5"></textarea>
+             <span><button type="button" onclick="replaceWrite4()">Comment</button></span>
+          </form>
+      </div> 
+    </div>
+
+    <ul class="footer-buttons">
+        <li id="like"></li>
+        <li id="comment"></li>
+    </ul>
+
+  </div>
+
+  <br>
+  <div class="posts-container" id="5">
+    <div class="post-header">
+        <div class="header-body">
+            <div class="post-info">
+                <h1 class="post-title"><a href="profile5.html">@Tifanny24</a></h1>                                  
+                <div class="post-date">
+                    Quezon City
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img class="content-image" src="picture5.jpg" />
+    </div>
+    <div class="post-footer">
+            <div class="description-title">
+                <h3 class ="label">November 07, 2022</h3>
+            </div>
+            <div class="desc-body">
+              <span>Chicken and Fries :D #Yum</span>
+          </div>
+          <br><hr>
+          <div class="post-comment">
+              <form id="descrip5">
+                  <p class="com-main" id="replace5">Write your comment</p>
+                  <br><br>
+                  <textarea name="" class="comment-box" id="desc5" cols="50" rows="5"></textarea>
+                 <span><button type="button" onclick="replaceWrite5()">Comment</button></span>
+              </form>
+          </div> 
+    </div>
+    <ul class="footer-buttons">
+        <li id="like"></li>
+        <li id="comment"></li>
+    </ul>
+  </div>
+  <main>
+    <div class="container">
+      
+      <div class="left">
+        <a class="profile">
+        
+        </a>
+      </div>
+  <main>
+    <div class="container">
+      
+      <div class="left">
+        <a class="profile">
+        
+        </a>
+      </div>
+      
+      
+      <div class="middle">
+        
+      </div>
+
+      
+      <div class="right">
+        
+      </div>
+
+    </div>
+  </main>
+  
+</body>
+<script src="script_post.js"></script>
+</html>
